@@ -32,7 +32,7 @@ const HomeHeader = () => {
   return (
     <Container>
       <SubTitle>
-        <StyledStar src={Star} height={17} />
+        <StyledStar src={Star} height={17} alt="Welcome star icon" />
         Bienvenue !
       </SubTitle>
       <StyledTitle>
@@ -41,7 +41,10 @@ const HomeHeader = () => {
         le bar a coktails pour vos evenements
       </StyledTitle>
       <StyledText>On se déplace à votre fête !</StyledText>
-      <Image src={HomeHeaderImage} />
+      <Image
+        src={HomeHeaderImage}
+        alt="Photo d'un barman cubain qui sert un cocktail"
+      />
     </Container>
   );
 };
