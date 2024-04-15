@@ -3,6 +3,8 @@
 import Link from "next/link";
 import styled from "styled-components";
 import Title from "../title";
+import Image from "next/image";
+import Arrow from "@/assets/icons/arrow.svg";
 
 const CardContainer = styled.div`
   position: absolute;
@@ -56,9 +58,9 @@ const Button = styled.div`
   align-items: center;
 `;
 
-const Card = ({ card, cardIndex }) => {
+const Card = ({ key, card, cardIndex }) => {
   return (
-    <CardContainer cardIndex={cardIndex}>
+    <CardContainer key={key} cardIndex={cardIndex}>
       <Container href="/">
         <Image
           src={card.background}
@@ -70,7 +72,10 @@ const Card = ({ card, cardIndex }) => {
         <BottomContainer>
           <Name>{card.name}</Name>
           <Button>
-            <Image src={Arrow} />
+            <Image
+              src={Arrow}
+              alt={`aller à la presstation ${card.name} de barman cubain`}
+            />
           </Button>
         </BottomContainer>
       </Container>

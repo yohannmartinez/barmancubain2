@@ -62,7 +62,11 @@ const CardsWheel = ({ cards }) => {
         <Crop>
           <RotableContainer zAxe={zAxe}>
             {cards.map((card, cardIndex) => (
-              <Card card={card} cardIndex={cardIndex} />
+              <Card
+                key={cardIndex + card.name}
+                card={card}
+                cardIndex={cardIndex}
+              />
             ))}
           </RotableContainer>
         </Crop>
