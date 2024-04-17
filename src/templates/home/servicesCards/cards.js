@@ -5,9 +5,9 @@ import Seminaire from "@/assets/images/seminaire.jpeg";
 import FeteEntreprise from "@/assets/images/feteEntreprise.jpg";
 
 export const cards = [
-  { name: "Mariage", background: Mariage },
-  { name: "Particulier", background: Fete },
-  { name: "Fete entreprise", background: FeteEntreprise },
-  { name: "Seminaire", background: Seminaire },
-  { name: "Atelier bar", background: Atelier },
+  { name: "Mariage", background: Mariage, route: "mariage" },
+  { name: "Particulier", background: Fete, route: "particulier" },
+  { name: "Fete entreprise", background: FeteEntreprise, route: "entreprises" },
+  { name: "Seminaire", background: Seminaire, route: "seminaire" },
+  { name: "Atelier bar", background: Atelier, route: "atelier" },
 ];

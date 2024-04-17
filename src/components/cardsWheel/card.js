@@ -63,7 +63,7 @@ const Button = styled.div`
 const Card = ({ key, card, cardIndex }) => {
   return (
     <CardContainer key={key} cardIndex={cardIndex}>
-      <Container href="/">
+      <Container href={card.route}>
         <Image
           src={card.background}
           alt={`prestation ${card.name} de barman cubain`}
