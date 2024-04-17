@@ -46,6 +46,8 @@ const BottomContainer = styled.div`
 
 const Name = styled(Title)`
   color: white;
+  text-align: left;
+  max-width: 250px;
 `;
 
 const Button = styled.div`
