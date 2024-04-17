@@ -11,6 +11,8 @@ const Container = styled.div`
   padding: 10px 20px;
   border-radius: 50px;
   letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
 `;
 
 const SubTitle = ({ children }) => {

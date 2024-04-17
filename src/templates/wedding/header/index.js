@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Image from "next/image";
 
 import HomeHeaderImage from "@/assets/images/homeHeader.png";
-import Star from "@/assets/icons/star.svg";
+import Ring from "@/assets/icons/ring.svg";
 import SubTitle from "@/components/subTitle";
 import Title from "@/components/title";
 import Text from "@/components/text";
@@ -16,7 +16,7 @@ const Container = styled.div`
   align-items: center;
 `;
 
-const StyledStar = styled(Image)`
+const StyledRing = styled(Image)`
   margin-right: 7px;
 `;
 
@@ -28,21 +28,19 @@ const StyledText = styled(Text)`
   margin: 0 0 80px 0;
 `;
 
-const HomeHeader = () => {
+const WeddingHeader = () => {
   return (
     <Container>
       <SubTitle>
-        <StyledStar
-          src={Star}
+        <StyledRing
+          src={Ring}
           height={17}
           alt="Accueil du site barman cubain"
         />
-        Bienvenue !
+        Mariage
       </SubTitle>
       <StyledTitle>
-        Barman cubain,
-        <br />
-        le bar a coktails pour vos evenements
+        Sublimez votre union en compagnie de Barman Cubain
       </StyledTitle>
       <StyledText>On se déplace à votre fête !</StyledText>
       <Image
@@ -53,4 +51,4 @@ const HomeHeader = () => {
   );
 };
 
-export default HomeHeader;
+export default WeddingHeader;
