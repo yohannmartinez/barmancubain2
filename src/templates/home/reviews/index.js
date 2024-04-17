@@ -8,7 +8,6 @@ import StarBubble from "@/assets/icons/starBubble.svg";
 import { reviews } from "./reviews";
 import Image from "next/image";
 import Background from "@/assets/images/moreReviews.png";
-import Text from "@/components/text";
 import SubTitle from "@/components/subTitle";
 import Link from "next/link";
 
