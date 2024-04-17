@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 
 function usePageSize() {
-  const [windowX, setWindowX] = useState(window.innerWidth || 0);
-  const [windowY, setWindowY] = useState(window.innerHeight || 0);
+  const windowExist = typeof window !== "undefined";
+  const [windowX, setWindowX] = useState(windowExist ? window.innerWidth : 0);
+  const [windowY, setWindowY] = useState(windowExist ? window.innerHeight : 0);
 
   useEffect(() => {
     const handleResize = () => {
